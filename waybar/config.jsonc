@@ -1,0 +1,86 @@
+{
+  "layer": "bottom",
+  "position": "top",
+  "height": 33,
+  "spacing": 5,
+  "modules-left": ["custom/start", "hyprland/workspaces", "tray", "sway/workspaces","sway/mode"],
+  "modules-center": ["sway/window"],
+  "modules-right": ["hyprland/language", "group/right"],
+
+
+  "custom/start": {
+	  "format": "Start",
+	  "tooltip": false,
+	  "on-click": "rofi -show drun"
+  },
+
+  "hyprland/workspaces": {
+	  "format": "{icon}",
+	  "on-click": "activate",
+	  "format-icons": {
+		  "urgent": "!",
+		  "active": "[  ]",
+		  "default": "-"
+	  }
+  },
+
+  "hyprland/language": {
+                 "format": "{}",
+                 "format-en": "EN",
+                 "format-ru": "RU",
+         },
+
+  "group/right": {
+	  "orientation": "horizontal",
+	  "modules": ["battery", "pulseaudio", "clock"]
+  },
+
+  "battery": {
+	  "states": {
+		  "good": 95,
+                  "warning": 30,
+                  "critical": 15
+                  },
+          "format": "{icon}  {capacity}%",
+          "format-charging": "{capacity}% ",
+          "format-plugged": "{capacity}% ",
+          "format-icons": [" ", " ", " ", " ", " "]
+  },
+
+  "pulseaudio": {
+                 "scroll-step": 5,
+                 "format": "{icon} {volume}%",
+                 "format-icons": {
+                 "default": ["", "", ""]
+                 },
+                 "on-click": "pavucontrol",
+                 "tooltip": false
+         },
+
+	 "clock": {
+                 "format": "<span color='#ffff66'> </span> {:%H:%M}",
+                 "tooltip-format": "<big><span color='#cdd6f4'>{:%Y %B}</span></big>\n<tt><small>{calendar}</small></tt>",
+                 "format-alt": "<span color='#ffff66'></span> {:%Y-%m-%d}",
+
+         "calendar": {
+                     "mode"          : "month",
+                     "mode-mon-col"  : 3,
+                     "weeks-pos"     : "right",
+                     "on-scroll"     : 1,
+                     "format": {
+                               "months":     "<span color='#cdd6f4'><b>{}</b></span>",
+                               "days":       "<span color='#cdd6f4'><b>{}</b></span>",
+                               "weeks":      "<span color='#f5c2e7'><b>W{}</b></span>",
+                               "weekdays":   "<span color='#f5c2e7'><b>{}</b></span>",
+                               "today":      "<span color='#eba0ac'><b><u>{}</u></b></span>"
+                               }
+                     },
+         "actions":  {
+                     "on-click-right": "mode",
+                     "on-click-forward": "tz_up",
+                     "on-click-backward": "tz_down",
+                     "on-scroll-up": "shift_up",
+                     "on-scroll-down": "shift_down"
+                     }
+                 }
+}

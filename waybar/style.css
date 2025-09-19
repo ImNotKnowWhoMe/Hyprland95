@@ -1,0 +1,109 @@
+#waybar {
+    background-color: #c0c0c0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+    font-family: "W95font-bold";
+    font-size: 12px;
+    color: #000000;
+    transition: all 0.1s ease;
+}
+
+tooltip {
+	color: #707070;
+	border-radius: 3;
+	background-color: #c0c0c0;
+	border-top: 2px solid #ffffff;
+	border-left: 2px solid #ffffff;
+	border-right: 2px solid #808080;
+	border-bottom: 2px solid #808080;
+}
+
+#custom-start {
+	margin: 3 3 3 3;
+	background-color: #c0c0c0;
+	border-top: 2px solid #ffffff;
+	border-left: 2px solid #ffffff;
+	border-bottom: 2px solid #808080;
+	border-right: 2px solid #808080;
+	padding: 2px 8px 2px 28px;
+	background-image: url('/home/marshall/.config/waybar/start-icon.png');
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: 4px center;
+	color: #000000;
+	font-family: "W95font-Bold";
+}
+
+#custom-start:hover {
+	background-color: #b7b7b7;
+        border-top: 2px solid #808080;
+        border-left: 2px solid #808080;
+        border-right: 2px solid #ffffff;
+        border-bottom: 2px solid #ffffff;
+}
+
+#workspaces {
+	font-family: "W95font-bold";
+	color: #a0a0a0;
+	border-radius: 3;
+	margin: 4 3 4 3;
+	padding: 2 5;
+	background-color: #bfbfbf;
+	border-top: 2px solid #808080;
+	border-left: 2px solid #808080;
+	border-bottom: 2px solid #ffffff;
+	border-right: 2px solid #ffffff;
+}
+
+#workspaces button {
+	color: #000000;
+}
+
+#tray {
+	border-radius: 3;
+        margin: 4 3 4 3;
+        padding: 2 5;	
+	background-color: #bfbfbf;
+	border-top: 2px solid #808080;
+	border-left: 2px solid #808080;
+	border-bottom: 2px solid #ffffff;
+	border-right: 2px solid #ffffff;
+}
+
+#language {
+	border-radius: 3;
+	margin: 4 3 4 3;
+	padding: 2 5;
+	background-color: #c0c0c0;
+	border-top: 2px solid #ffffff;
+	border-left: 2px solid #ffffff;
+	border-bottom: 2px solid #808080;
+	border-right: 2px solid #808080;
+}
+
+#right {
+	border-radius: 3;
+	margin: 4 5 4 10;
+        background-color: #bfbfbf;
+        border-bottom: 2px solid #ffffff;
+        border-right: 2px solid #ffffff;
+        border-left: 2px solid #808080;
+        border-top: 2px solid #808080;
+        padding: 5px 9px;
+}
+
+#pulseaudio {
+	font-family: "W95font-bold";
+	padding: 2;
+	margin: 0 3 0 5;
+}
+
+#clock {
+	font-family: "W95font-bold";
+}
+
+#battery {
+	font-family: "W95font-bold";
+} 
